@@ -1,0 +1,53 @@
+.clock{
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 400px;
+  border: 2px black solid;
+  animation-name:bouncingball;
+  animation-iteration-count: infinite;
+  animation-duration:300s;
+}
+.second{
+  position: absolute;
+  background-color:black;
+  width: 3px;
+  height: 200px;
+  left:50%;
+  top:0;
+}
+.hours-container:nth-child(1){
+  background-color:black;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  position: absolute;
+  left:47%;
+  top:47%;
+  animation-name:bouncingball;
+  animation-iteration-count: infinite;
+  animation-duration:30s;
+}
+
+.minutes{
+    position: absolute;
+    background-color:black;
+    width: 5px;
+    height: 150px;
+    left:50%;
+    top:50%;
+     
+}
+
+@keyframes bouncingball {
+    0%{}
+    100%{ transform:rotate(360deg);}
+
+  }
+  /* width: 400px; 
+  height: 400px;
+  background-color: black;
+  border-radius: 50%;*/
+  /* 100%{ transform:rotate(360deg);} */
